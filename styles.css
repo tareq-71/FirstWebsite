@@ -6,7 +6,7 @@
 }
 
 .navbar {
-    background: #131313;
+    background: gray;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -29,8 +29,7 @@
 }
 
 #navbar__logo {
-    background-color: coral;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb119 100%);
+    background-color: black;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -59,7 +58,7 @@
 }
 
 .navbar__links {
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +86,7 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: red;
+    background: black;
     color: white;
 }
 
@@ -101,6 +100,56 @@
     transition: all 0.3s ease;
 }
 
+
+.contact-box {
+    border: 2px solid black;
+    padding: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    float: right;
+    margin-right: 100px; /* Add some margin to give space */
+    margin-bottom: 70px;
+    overflow-wrap: break-word; /* Allow long words to wrap */
+}
+
+.contact-box h2 {
+    text-align: center;
+}
+
+.contact-box p {
+    max-width: 250px; /* Set a maximum width for the paragraphs */
+    margin: 0 auto; /* Center the paragraphs */
+    vertical-align: top;
+    overflow-wrap: break-word; /* Allow long words to wrap */
+    font-size: 20px !important; /* Adjust the font size as needed */
+}
+
+.Emails {
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 30px !important;
+}
+
+
+.image-container {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center; /* Center-align the text */
+    float: right;
+}
+
+.image-container img {
+    display: block; /* Ensure the image doesn't have extra space below it */
+    margin: 0 auto; /* Center the image within the container */
+    width: 150px;
+}
+
+.project-main {
+    margin-top: 50px !important;
+}
 @media screen and (max-width: 960px) {
     .navbar__container{
         display: flex;
@@ -197,7 +246,7 @@
 
     /* Hero Section */
     .main {
-        background-color: black;
+        background-color: white;
     }
 
     .main__container {
@@ -207,7 +256,7 @@
         justify-self: center;
         margin: 0 auto;
         height: 90vh;
-        background-color: black;
+        background-color: white;
         z-index: 1;
         width: 100%;
         max-width: 1300px;
@@ -216,8 +265,7 @@
 
     .main__content h1 {
         font-size: 4rem;
-        background-color: orange;
-        background-image: linear-gradient(to top, red 0%, orange 100%);
+        background-color:black;
         background-size: 100%;
         -webkit-background-clip: text;
         -moz-background-clip: text;
@@ -226,9 +274,8 @@
     }
 
     .main__container h2 {
-        ont-size: 4rem;
-        background-color: orange;
-        background-image: linear-gradient(to top, purple 0%, cyan 100%);
+        font-size: 4rem;
+        background-color: black;
         background-size: 100%;
         -webkit-background-clip: text;
         -moz-background-clip: text;
@@ -241,17 +288,17 @@
         margin-top: 1rem;
         font-size: 2rem;
         font-weight: 700;
-        color: rgb(251, 249, 249);
+        color: black;
     }
 
     .main__btn {
         font-size: 1rem;
-        background-image: linear-gradient(to top, orange 0%, red 100%);
         padding: 14px 32px;
         border: none;
         border-radius: 4px;
         color: white;
         margin-top: 2rem;
+        margin-bottom: 0px;
         cursor: pointer;
         position: relative;
         transition: all 0.35s;
@@ -282,15 +329,6 @@
 
     .main__btn:hover::after {
         width: 100%;
-    }
-
-    .main__img--container {
-        text-align: center;
-    }
-
-    #main__img {
-        height: 80%;
-        width: 80%;
     }
 
     /* Mobile Resposive */
@@ -348,7 +386,7 @@
 
     /* Services Section CSS */
     .services {
-        background: black;
+        background: rgb(100, 100, 100);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -356,8 +394,7 @@
     }
 
     .services h1 {
-        background-color: orange;
-        background-image: linear-gradient(to right, orange 0%, red 100%);
+        background-color: white;
         background-size: 100%;
         margin-bottom: 5rem;
         font-size: 2.5rem;
@@ -385,7 +422,7 @@
     }
 
     .services__card:nth-child(2){
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/ash2.jpeg');
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/banner-sm.webp');
     }
 
     .services h2 {
@@ -419,5 +456,27 @@
         transition: 0.2s ease-in;
         cursor: pointer;
     }
+
+    .Git-Hub {
+        color: rgb(8, 8, 8);
+        background-color: white;
+        font-size: 20px;
+        display: inline; /* or inline-block */
+    }
+
+    .info {
+        text-align: right;
+        border: 1px solid #000;
+        border-color: rgb(251, 249, 249);
+        padding: 5px; /* Add padding for spacing between text and border */
+    }
+    
+
+    .info-me {
+        color: white;
+        border: 1px solid #000;
+        border-color: rgb(251, 249, 249);
+    }
+
 
 
